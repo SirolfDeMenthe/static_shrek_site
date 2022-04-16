@@ -1,0 +1,525 @@
+/* @import url('https://allfont.net/allfont.css?fonts=shrek'); */
+@font-face {
+	font-family: Shrek;
+	src: url(../fonts/SHREK.TTF);
+}
+
+body{
+	background-color: #ccffcc;
+}
+
+h1,h2,h3,h4,h5,h6,.menu,.dropdown a,footer
+{
+	font-family:Shrek;
+	color:rgb(11, 145, 11);
+}
+
+p, form,table{
+	font-family:Kristen ITC;
+}
+
+table{
+	font-size:13px;
+}
+
+h1{
+	text-align:center;
+	padding	: 80px 0 80px 0;
+}
+
+.navbar img{
+	width:70px;
+	float:left;
+	margin-right: 10px;
+}
+
+.navbar ul{
+	padding-left:0;
+}
+
+.navbar .menu{
+	display:inline-block;
+	width:128px;
+	height:47px;
+	padding:24px 0px 0px 0px;
+}
+
+.navbar{
+	background-color:  #004d00;
+	list-style-type: none;
+}
+
+.navbar li{
+	display:inline-flex;
+	font-size: 17px;
+	text-align:center;
+}
+
+.navbar li .menu{
+	text-decoration:none;
+	color:#fff
+	
+}
+.navbar li:hover{
+	background-color:#006600;
+}
+
+.navbar #navbox{
+    width: 112px;
+    height: 37px;
+    position: absolute;
+    top: 6px;
+    left: -26px;
+    opacity: 0;
+}
+
+span{
+    display: none;
+    width: 35px;
+    height: 4px;
+    background: #fff;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+ul span{
+    display: none;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 4px;
+	border-radius: 3px;
+	float:right;
+	margin-top:25px;
+}
+
+.presentation{
+	margin-left: 27%;
+	margin-right: auto;
+	display:block;
+	padding:60px 0;
+	width:610px;
+	height:211px;
+}
+
+form input{
+	display: block;
+}
+
+form label{
+	display: block;
+	padding-top:20px;
+}
+
+.checksub{
+	width:100%;
+	display: inline;
+	float:left;
+}
+
+.checksub input{
+	padding-right: 40px;
+}
+
+.rotateY img:hover{
+	transform:rotateY(360deg);
+	transition:all 2s ease 0s;
+}
+
+.rotateZ img:hover{
+	transform: rotateZ(360deg);
+	transition:all 2s ease 0s;
+}
+
+.leftimg{
+	float:left;
+}
+
+.cntrimg{
+	display: flex;
+	justify-content: center;
+	/* float:none; */
+	/* margin-left:35%; */
+	/* margin-right:auto; */
+}
+.cntrimg img{
+	width: 400px;
+}
+
+@keyframes updown {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100px); }
+}
+
+.rightimg{
+	float:right;
+	width:150px;
+	animation-name: updown;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+}
+
+.size300{
+	width:300px
+}
+
+.size400{
+	width:400px;
+}
+
+section img{
+	padding: 0px 50px 20px 20px;
+}
+
+main section{
+	height:463px;
+	margin-bottom:150px;
+}
+
+.dropdown a{
+	text-decoration: none;
+	list-style-type: none;
+	color:#fff;
+}
+
+.dropdown ul {
+	display: none;
+	width:200px;
+	position: absolute;
+	top:87px;
+	left:220px;
+	background-color: #004d00 ;
+}
+
+.dropdown li{
+	display: block;
+}
+
+.dropdown:hover ul{
+	display: block;
+}
+
+.dropdown ul li a{
+	font-size:12px;
+}
+
+.navbar #artBox{
+    position: absolute;
+    opacity: 0;
+}
+
+@keyframes fondu{
+	0%{left:0px;}
+	12%{left:0px;}
+	25%{left:-610px;}
+	47%{left:-610px;}
+	60%{left:-1220px;}
+	72%{left:-1220px;}
+	85%{left:-1830px;}
+	90%{left:-1830px;}
+}
+
+.d2{
+	width: 1830px;
+  	height: 211px;
+  	left:0px;
+  	position: absolute;
+  	animation-duration: 10s;
+  	animation-iteration-count:infinite;
+  	animation-name: fondu;
+}
+
+.conteneur{
+	margin-top: 100px;
+	margin-left:auto;
+	margin-right:auto;
+	width:610px;
+	height:211px;
+	overflow: hidden;
+	position: relative;
+	background-image: url(img/shrek1.png);
+}
+
+.slide1, .slide2, .slide3, .slide4{
+	position: absolute;
+	width:610px;
+	height:211px;
+}
+
+.d2 img{
+	width:500px;
+	height:160px;
+}
+
+.slide1{left:0;}
+.slide2{left:610px;}
+.slide3{left:1220px;}
+.slide4{left:1830px;}
+
+.autreArt{
+	margin-top: 40px;
+}
+
+.autreArt ul{
+	padding-left:0px;
+}
+
+
+.autreArt ul li{
+	list-style-type: none;
+	padding:10px 0;
+}
+
+@keyframes resize {
+	from{font-size: 14px;}
+	to{font-size: 30px ;}
+}
+
+.btn{
+	font-family:Kristen ITC;
+	color:#000;
+	text-decoration: none;
+}
+
+.btn:hover{
+	animation-name: resize;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+table.stat th, table.stat td{
+	border-bottom:1px solid black;
+}
+
+table.stat td{
+	padding:15px;
+}
+
+table.stat{
+	width:100%
+}
+
+table.stat th{
+	height:50px;
+	background-color:rgb(11, 145, 11); ;
+	color:white;
+}
+
+table.stat tr:nth-child(even){
+	background-color:#afdbaf ;
+}
+
+footer{
+	background-color: #000;
+	font-size: 18px;
+	display: block;
+	float: left;
+	width:100%;
+	opacity: 70%;
+	margin-top:200px;
+	padding-bottom: 0;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer li {
+	list-style-type:none;
+	text-align:left;
+}
+
+footer li a,li{
+	color:#fff;
+	font-size: 14px;
+	display:block;
+}
+
+footer .col1{
+	float: left;
+	margin-left:200px;
+}
+
+footer .col2{
+	float:left;
+	margin-left:6%;
+}
+
+footer .col3{
+	float: right;
+	margin-right:200px;
+}
+
+footer ul{
+	padding:0;
+}
+
+@media screen and (max-width: 900px){
+	span{
+		display: block;
+	}
+
+	ul span{
+		display: block;
+	}
+
+	.navbar{
+		padding:5px;
+	}
+
+	.navbar img{
+		width:28px;
+		display: inline-block;
+		margin-left:50%;
+		margin-right: 50%;
+		margin-top:-26px
+	}
+
+	.navbar li{
+		display:block;
+	}
+
+	.navbar ul{
+        padding-left: 10px; 
+		margin-top: 0px;
+		display:none;
+    }
+
+    .navbar ul li{
+        list-style: none;
+        padding: 10px;
+		font-size: 15px;
+		display: block;
+	}
+
+	.navbar .menu{
+		padding:10px 0 10px 0;
+		height:10px;
+	}
+
+	.navbar #navbox:checked ~ul {
+		display: block;
+	}
+
+	.presentation{
+		margin-left: 15%;
+		margin-right: auto;
+		display:block;
+		padding:60px 0;
+		width:300px;
+		height:96px;
+	}
+
+	.size300{
+		width:200px
+	}
+
+	.size400{
+		width:250px;
+	}
+
+	section img:hover{
+		translate: none;
+		transform: none;
+	}
+
+
+	.dropdown a{
+		text-decoration: none;
+		list-style-type: none;
+		color:#fff;
+	}
+	
+	.dropdown ul {
+		position: relative;
+		width:100%;
+		top:10px;
+		left:0px;
+		background-color: #004d00 ;
+		padding-left:0px;
+		padding-right:0px;
+	}
+	
+	.dropdown li{
+		display: none;
+	}
+	
+	.dropdown:hover ul{
+		display: none;
+	}
+
+	.navbar #artBox{
+		height: 25px;
+		width:50px;
+		position: absolute;
+		top: 104px;
+		right: 0%;
+		opacity: 0;
+		float:right
+	}
+
+	.navbar #artBox:checked ~li ul {
+		display: block;
+	}
+
+	.navbar #artBox:checked ~span {
+		transform:rotate(90deg);
+	}
+
+	.leftimg{
+		float:none;
+	}
+
+	.rightimg{
+		float:right;
+		width: 100px;
+	}
+
+	.conteneur{
+		width:300px;
+		height:96px;
+		overflow: hidden;
+		position: relative;
+		background-image: url(img/shrek1.png);
+	}
+	
+	.slide1, .slide2, .slide3, .slide4{
+		position: absolute;
+		width:300px;
+		height:96px;
+	}
+	
+	.d2 img{
+		width:300px;
+		height:96px;
+	}
+	
+	footer .col1{
+		margin-left: 10px;
+		float: left;
+	}
+	
+	footer .col2{
+		float:left;
+		margin-left:0%;
+	}
+	
+	footer .col3{
+		float: right;
+		margin-right: 10px;
+	}
+	
+	footer{
+		font-size: 14px;
+	}
+
+	footer li a{
+		font-size: 12px;
+	}
+
+
+}
